@@ -30,7 +30,7 @@ yum install -y gcc openssl-devel bzip2-devel libffi-devel
 ```shell
 ./configure prefix=/usr/local/python3
 make && make install
-export PATH=$PATH:/usr/local/python3/bin/
+export PATH=$PATH:/usr/local/python3/bin/  (重启后环境变量失效的写法，要一直生效需要写到那个b开头的文件里好像，今天太晚了，不想改了，下次再说)
 ```
 
 2. 安装pip3
