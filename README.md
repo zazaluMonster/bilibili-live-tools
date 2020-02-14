@@ -51,3 +51,16 @@ $ python3 setup.py install
 3. 运行bilibili-live-tools
 
 按照wiki里写的做就好，只不过记得使用python3
+
+## 日常维护操作
+
+1. 后台运行
+```shell
+nohup python3 -u run.py > out.log 2>&1 &
+```
+
+2. 追踪日志
+
+nohup产生的日志在out.log里，可以vi或者tail -f查看
+
+3. 多线程启动（未使用过）
