@@ -64,3 +64,9 @@ nohup python3 -u run.py > out.log 2>&1 &
 nohup产生的日志在out.log里，可以vi或者tail -f查看
 
 3. 多线程启动（未使用过）
+
+4. 查看进程启动路径，
+```shell
+ll /proc/pid
+```
+在列出来的列表里找到`cwd`，cwd箭头显示的就是启动路径
